@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Dice and Mail</title>
 </head>
@@ -13,12 +14,19 @@
 <body>
     <div class="container">
 
-        
-        <div id="mail">
+
+        <div id="mail" class=" d-flex">
             <div class="input-group flex-column ">
                 <label for="email" class="mb-3">Controlla qui la tua email</label>
                 <input type="email" class="form-control" id="email" aria-describedby="basic-addon1" value=""
                     name="email">
+            </div>
+            <button class="btn btn-info">Check your email</button>
+            <div id="autorizzato" class="alert alert-success d-none" role="alert">
+                Authorized <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div id="nonautorizzato" class="alert alert-danger d-none" role="alert">
+                Not allowed <i class="fa-regular fa-circle-xmark"></i>
             </div>
         </div>
 

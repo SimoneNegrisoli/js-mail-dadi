@@ -28,10 +28,10 @@
 
 // Email
 
-    const dateEmail = document.getElementById('email')
+    const dateEmail = document.getElementById('email');
     console.log(dateEmail)
-    
-    const adressEmail = [
+
+    const authorizedEmailAddresses = [
         'prima@gmail.com',
         'seconda@gmail.com',
         'terza@gmail.com',
@@ -40,4 +40,31 @@
         'sesta@gmail.com',
         'settima@gmail.com'  
     ]
-    console.log(adressEmail)
+ 
+
+    const btnEmail = document.querySelector('button');
+    
+    let access;
+    const autorizzato = document.getElementById('autorizzato')
+    const nonautorizzato = document.getElementById('nonautorizzato')
+
+
+
+
+
+    btnEmail.addEventListener('click', function(){
+        // mail inserita dall' utente 
+
+        const userEnterEmail = dateEmail.value;
+        console.log(userEnterEmail)
+        
+        if (authorizedEmailAddresses.includes(userEnterEmail)){
+            autorizzato.remove('d-none');
+            
+
+        }
+
+
+
+    }
+    )
