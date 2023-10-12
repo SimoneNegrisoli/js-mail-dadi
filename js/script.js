@@ -81,7 +81,7 @@
         let authorized = false;
 
         for(let i = 0; i < authorizedEmailAddresses.length; i++ ){
-            if(userEnterEmail.toLocaleLowerCase === authorizedEmailAddresses.toLocaleLowerCase){
+            if(userEnterEmail.toLocaleLowerCase() === authorizedEmailAddresses[i].toLocaleLowerCase()){
                 authorized = true;
             }
         }
