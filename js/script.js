@@ -26,7 +26,7 @@
 
 
 
-// Email
+// Esercizio Email
 
     const dateEmail = document.getElementById('email');
     console.log(dateEmail)
@@ -41,16 +41,9 @@
         'settima@gmail.com'  
     ]
  
-
     const btnEmail = document.querySelector('button');
-    
-    let access;
     const autorizzato = document.getElementById('autorizzato')
     const nonautorizzato = document.getElementById('nonautorizzato')
-
-
-
-
 
     btnEmail.addEventListener('click', function(){
         // mail inserita dall' utente 
@@ -65,8 +58,11 @@
             nonautorizzato.classList.remove('d-none');
             autorizzato.classList.add('d-none');
         }
-
-
-
     }
     )
+
+// Esercizio Dadi
+
+    const dicegame = document.getElementById('dicegame')
+
+    
