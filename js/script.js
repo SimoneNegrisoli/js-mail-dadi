@@ -59,9 +59,11 @@
         console.log(userEnterEmail)
         
         if (authorizedEmailAddresses.includes(userEnterEmail)){
-            autorizzato.remove('d-none');
-            
-
+            autorizzato.classList.remove('d-none');
+            nonautorizzato.classList.add('d-none');
+        } else {
+            nonautorizzato.classList.remove('d-none');
+            autorizzato.classList.add('d-none');
         }
 
 
