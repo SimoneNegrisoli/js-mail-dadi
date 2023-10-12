@@ -1,6 +1,11 @@
+
+
+
+
 // Chiedi all’utente la sua email,
 // controlla che sia nella lista di chi può accedere,
 // stampa un messaggio appropriato sull’esito del controllo.
+
 // Gioco dei dadi
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
@@ -13,6 +18,26 @@
 // 3. si ma noi cosa vogliamo fare?
 // 4. torniamo a scrivere in italiano
 // 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
+
+
 // Bonus
 // Usiamo un input e un bottone per inserire la mail e poi mostriamo i risultati in pagina.
 //   2.   Grafica per il gioco dei dadi
+
+
+
+// Email
+
+    const dateEmail = document.getElementById('email')
+    console.log(dateEmail)
+    
+    const adressEmail = [
+        'prima@gmail.com',
+        'seconda@gmail.com',
+        'terza@gmail.com',
+        'quarta@gmail.com',
+        'quinta@gmail.com',
+        'sesta@gmail.com',
+        'settima@gmail.com'  
+    ]
+    console.log(adressEmail)
