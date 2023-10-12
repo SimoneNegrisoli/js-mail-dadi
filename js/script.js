@@ -28,41 +28,97 @@
 
 // Esercizio Email
 
+    // const dateEmail = document.getElementById('email');
+    // console.log(dateEmail)
+
+    // const authorizedEmailAddresses = [
+    //     'prima@gmail.com',
+    //     'seconda@gmail.com',
+    //     'terza@gmail.com',
+    //     'quarta@gmail.com',
+    //     'quinta@gmail.com',
+    //     'sesta@gmail.com',
+    //     'settima@gmail.com'  
+    // ]
+ 
+    // const btnEmail = document.querySelector('button');
+    // const autorizzato = document.getElementById('autorizzato')
+    // const nonautorizzato = document.getElementById('nonautorizzato')
+
+    // btnEmail.addEventListener('click', function(){
+    //     // mail inserita dall' utente 
+
+    //     const userEnterEmail = dateEmail.value;
+    //     console.log(userEnterEmail)
+        
+    //     if (authorizedEmailAddresses.includes(userEnterEmail)){
+    //         autorizzato.classList.remove('d-none');
+    //         nonautorizzato.classList.add('d-none');
+    //     } else {
+    //         nonautorizzato.classList.remove('d-none');
+    //         autorizzato.classList.add('d-none');
+    //     }
+    // }
+    // )
+
     const dateEmail = document.getElementById('email');
-    console.log(dateEmail)
 
     const authorizedEmailAddresses = [
-        'prima@gmail.com',
-        'seconda@gmail.com',
-        'terza@gmail.com',
-        'quarta@gmail.com',
-        'quinta@gmail.com',
-        'sesta@gmail.com',
-        'settima@gmail.com'  
-    ]
- 
+    'prima@gmail.com', // 0
+    'seconda@gmail.com',// 1
+    'terza@gmail.com', // 2
+    'quarta@gmail.com', // 3
+    'quinta@gmail.com', // 4
+    'sesta@gmail.com', // 5
+    'settima@gmail.com' // 6
+];
     const btnEmail = document.querySelector('button');
     const autorizzato = document.getElementById('autorizzato')
     const nonautorizzato = document.getElementById('nonautorizzato')
 
     btnEmail.addEventListener('click', function(){
-        // mail inserita dall' utente 
-
         const userEnterEmail = dateEmail.value;
-        console.log(userEnterEmail)
-        
-        if (authorizedEmailAddresses.includes(userEnterEmail)){
+        let authorized = false;
+
+        for(let i = 0; i < authorizedEmailAddresses.length; i++ ){
+            let userEnterEmail = authorizedEmailAddresses[i];
+            if(userEnterEmail.toLocaleLowerCase === authorizedEmailAddresses.toLocaleLowerCase){
+                authorized = true;
+            }
+        }
+        if(authorized){
             autorizzato.classList.remove('d-none');
             nonautorizzato.classList.add('d-none');
-        } else {
+        }else{
             nonautorizzato.classList.remove('d-none');
             autorizzato.classList.add('d-none');
         }
-    }
-    )
 
-// Esercizio Dadi
+    })
 
-    const dicegame = document.getElementById('dicegame')
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Esercizio Dadi
+
+//     const dicegame = document.getElementById('dicegame')
+
+//     const numbers[]
