@@ -66,26 +66,39 @@
 
     })
 
-// // Esercizio Dadi
+// Esercizio Dadi
 
     // utility
     function getRndInteg (min, max){
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-
-    const dicegameEl = document.getElementById('dicegame')
-    const number = [1, 2, 3, 4, 5, 6]
-
-    let userNumber = getRndInteg(0 , number.length -1);
-    let computerNumber = getRndInteg(0 , number.length -1);
-    number[userNumber]
-    number[computerNumber]
     
-    console.log(number[computerNumber])
-    console.log(number[userNumber])
+    let msg;
+    const btndice = document.getElementById('dicebutton')
+    const diceImage = document.querySelectorAll('.dice-value')
+    const noticeGame = document.querySelector('.notice')
 
-    for(x = 0; x < number.length; x++){
-        // console.log(number[x])
-    }
 
+    btndice.addEventListener('click', function(){
+        const userNumber = getRndInteg (1, 6);
+        const computerNumber = getRndInteg (1, 6);
+        
+        if (userNumber > computerNumber){
+            msg = 'You win'
+        } else if (userNumber === computerNumber){
+            msg = 'You drew'
+        }else {
+            msg = 'You lose'
+        }
+        console.log(msg)
+        noticeGame.innerHTML = msg
+
+    })
+
+
+
+    
+    
+
+   
